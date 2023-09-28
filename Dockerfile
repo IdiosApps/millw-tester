@@ -10,7 +10,9 @@ RUN curl -L -o mill https://raw.githubusercontent.com/lefou/millw/0.4.9/millw &&
     mv mill /usr/local/bin/
 
 # Display Mill version
-RUN mill --version
+RUN mill --mill-version 0.11.4 --version
+
+RUN echo "done with mill version"
 
 # Set the default command to run Mill with --help
 CMD ["mill", "--help"]
