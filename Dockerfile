@@ -5,7 +5,8 @@ FROM amazoncorretto:11
 WORKDIR /app
 
 # Download and install Mill Wrapper 0.4.9
-RUN curl -L -o mill https://raw.githubusercontent.com/lefou/millw/0.4.8/millw && \
+
+RUN curl -L -o mill https://raw.githubusercontent.com/Flowdalic/millw/short-circuit-by-first-bytes/millw && \
     chmod +x mill && \
     mv mill /usr/local/bin/
 
